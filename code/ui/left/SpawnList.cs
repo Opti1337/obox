@@ -31,6 +31,8 @@ public partial class SpawnList : Panel
 			if ( file.Contains( "_lod0" ) ) continue;
 			if ( file.Contains( "clothes" ) ) continue;
 
+			Log.Info(file);
+
 			Canvas.AddItem( file.Remove( file.Length - 6 ) );
 		}
 	}
