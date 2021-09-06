@@ -1,4 +1,0 @@
-"settings"
-{
-	"maxresmobile"		"4096"
-}
