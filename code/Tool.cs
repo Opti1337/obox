@@ -53,6 +53,8 @@ partial class Tool : Carriable
 
 	public override void Simulate( Client owner )
 	{
+		// if ( IsServer ) return;
+
 		UpdateCurrentTool( owner );
 
 		lookPos = Owner.EyePos;
@@ -117,10 +119,6 @@ partial class Tool : Carriable
 			CurrentTool.Owner = owner.Pawn as Player;
 			CurrentTool.Activate();
 		}
-
-		Log.Info( Vector3.Forward.ToString() );
-		Log.Info( Vector3.Right.ToString() );
-		Log.Info( Vector3.Up.ToString() );
 	}
 
 	public override void ActiveStart( Entity ent )
@@ -282,11 +280,13 @@ partial class Tool : Carriable
 			{
 				DebugOverlay.Sphere( test.Value, 0.5f, Color.Yellow );
 				Vector3 side = GetSide( test.Value, AimEntity as ModelEntity );
-				DebugOverlay.ScreenText( 17, AimEntity.Transform.PointToLocal( test.Value ).ToString() );
-				DebugOverlay.ScreenText( 18, side.ToString() );
+				// DebugOverlay.ScreenText( 17, AimEntity.Transform.PointToLocal( test.Value ).ToString() );
+				// DebugOverlay.ScreenText( 18, side.ToString() );
 				// DebugOverlay.Box();
 				DebugOverlay.Line( AimEntity.Transform.PointToWorld( aimBBox.Center ), AimEntity.Transform.PointToWorld( side * 30 ), Color.Yellow, 0, false );
 			}
+
+			DebugOverlay.Sphere( AimEntity.Position, 0.5f, Color.Red, false );
 
 			// DebugOverlay.Text( obvgrid.LNE, "LNE", Color.Green );
 			// DebugOverlay.Text( obvgrid.LNW, "LNW", Color.Green );
@@ -307,6 +307,17 @@ partial class Tool : Carriable
 			DrawBoundary( obvgrid.LSE, obvgrid.USE, obvgrid.LNE, obvgrid.LSW );
 
 			// DrawGrid( vectorOrigin, vectorX, vectorY );
+
+			if ( AimEntity is ModelEntity modelEntity )
+			{
+				// DebugOverlay.ScreenText(10, (AimEntity.AngularVelocity.pitch / 6).ToString());
+				// DebugOverlay.ScreenText(11, (AimEntity.AngularVelocity.yaw / 6).ToString());
+				// DebugOverlay.ScreenText(12, (AimEntity.AngularVelocity.roll / 6).ToString());
+
+				// DebugOverlay.ScreenText(10, modelEntity.PhysicsBody.AngularVelocity.x.ToString());
+				// DebugOverlay.ScreenText(11, modelEntity.PhysicsBody.AngularVelocity.y.ToString());
+				// DebugOverlay.ScreenText(12, modelEntity.PhysicsBody.AngularVelocity.z.ToString());
+			}
 
 			DebugOverlay.Axis( AimEntity.Transform.PointToWorld( aimBBox.Center ), AimEntity.Rotation, Math.Min( 8f, Math.Min( aimBBox.Size.x / 2, Math.Min( aimBBox.Size.y / 2, aimBBox.Size.z / 2 ) ) ), 0, false );
 		}
@@ -342,6 +353,13 @@ namespace Sandbox.Tools
 		public virtual void OnFrame()
 		{
 			UpdatePreviews();
+		}
+
+		public string GetConvarValue( string name, string defaultValue = null )
+		{
+			return Host.IsServer
+				? Owner.GetClientOwner().GetClientData( name, defaultValue )
+				: ConsoleSystem.GetValue( name, default );
 		}
 
 		public virtual void CreateHitEffects( Vector3 pos )
