@@ -40,7 +40,7 @@
 						align_origin_y_type = "None"
 						align_origin_z_type = "None"
 						filename = "models/addon_models/test_006/test_006.obj"
-						import_scale = 10.0
+						import_scale = 30.0
 						faceMergeAngle = 10.0
 						maxHullVertices = 0
 						import_mode = "HullPerMesh"
@@ -62,7 +62,7 @@
 						filename = "models/addon_models/test_006/test_006.obj"
 						import_translation = [ 0.0, 0.0, 0.0 ]
 						import_rotation = [ 0.0, 0.0, 0.0 ]
-						import_scale = 10.0
+						import_scale = 30.0
 						align_origin_x_type = "None"
 						align_origin_y_type = "None"
 						align_origin_z_type = "None"
