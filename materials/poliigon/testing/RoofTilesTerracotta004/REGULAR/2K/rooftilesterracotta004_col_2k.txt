@@ -1,0 +1,7 @@
+"settings"
+{
+	"clampu"		"1"
+	"clampv"		"1"
+	"clampw"		"1"
+	"maxresmobile"		"4096"
+}

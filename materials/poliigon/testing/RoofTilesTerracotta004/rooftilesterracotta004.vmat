@@ -1,0 +1,43 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "simple.vfx"
+
+	//---- PBR ----
+	F_AMBIENT_OCCLUSION_TEXTURE 1
+
+	//---- Ambient Occlusion ----
+	TextureAmbientOcclusion "materials/poliigon/testing/RoofTilesTerracotta004/REGULAR/2K/RoofTilesTerracotta004_AO_2K.jpg"
+
+	//---- Color ----
+	g_flModelTintAmount "1.000"
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	TextureColor "materials/poliigon/testing/RoofTilesTerracotta004/REGULAR/2K/RoofTilesTerracotta004_COL_2K.jpg"
+
+	//---- Fade ----
+	g_flFadeExponent "1.000"
+
+	//---- Fog ----
+	g_bFogEnabled "0"
+
+	//---- Lighting ----
+	g_flDirectionalLightmapMinZ "0.050"
+	g_flDirectionalLightmapStrength "1.000"
+
+	//---- Metalness ----
+	g_flMetalness "0.000"
+
+	//---- Normal ----
+	TextureNormal "materials/poliigon/testing/RoofTilesTerracotta004/REGULAR/2K/RoofTilesTerracotta004_NRM_2K.png"
+
+	//---- Roughness ----
+	TextureRoughness "materials/poliigon/testing/RoofTilesTerracotta004/REGULAR/2K/RoofTilesTerracotta004_DISP16_2K.tif"
+
+	//---- Texture Coordinates ----
+	g_nScaleTexCoordUByModelScaleAxis "0"
+	g_nScaleTexCoordVByModelScaleAxis "0"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+}
