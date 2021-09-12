@@ -37,11 +37,19 @@
 						[
 							{
 								from = "body.vmat"
-								to = "materials/addon_materials/satsumagt/satsumagt.vmat"
+								to = "materials/addon_materials/satsumagt/satsumagt_body.vmat"
 							},
 							{
 								from = "default_obj.vmat"
 								to = "materials/addon_materials/gear.vmat"
+							},
+							{
+								from = "glass.vmat"
+								to = "materials/addon_materials/satsumagt/satsuma_windows.vmat"
+							},
+							{
+								from = "body2.vmat"
+								to = "materials/addon_materials/satsumagt/satsuma_body_masse.vmat"
 							},
 						]
 						use_global_default = false

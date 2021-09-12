@@ -37,11 +37,11 @@
 						[
 							{
 								from = "disk.vmat"
-								to = "materials/addon_materials/satsumagt/satsumagt_rim.vmat"
+								to = "materials/addon_materials/satsumagt/satsuma_rim.vmat"
 							},
 							{
 								from = "tire.vmat"
-								to = "materials/addon_materials/satsumagt/satsumagt_tire.vmat"
+								to = "materials/addon_materials/satsumagt/satsuma_tire.vmat"
 							},
 						]
 						use_global_default = false
