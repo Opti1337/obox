@@ -70,28 +70,31 @@
 				children = 
 				[
 					{
-						_class = "PhysicsHullFile"
-						name = "satsumagt_base"
+						_class = "PhysicsShapeBox"
 						parent_bone = ""
 						surface_prop = "default"
 						collision_prop = "default"
-						recenter_on_parent_bone = false
-						offset_origin = [ 0.0, 0.0, 35.0 ]
-						offset_angles = [ 0.0, 180.0, 0.0 ]
-						align_origin_x_type = "None"
-						align_origin_y_type = "None"
-						align_origin_z_type = "None"
-						filename = "cars/satsumagt_base.obj"
-						import_scale = 1.0
-						faceMergeAngle = 30.0
-						maxHullVertices = 0
-						import_mode = "SingleHull"
-						optimization_algorithm = "IVR"
-						import_filter = 
-						{
-							exclude_by_default = false
-							exception_list = [  ]
-						}
+						origin = [ -5.5761, 0.0, 36.0 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 71.175812, 61.106773, 47.37064 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						parent_bone = ""
+						surface_prop = "default"
+						collision_prop = "default"
+						origin = [ 46.702301, 0.0, 28.0 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 45.345322, 58.898109, 30.764614 ]
+					},
+					{
+						_class = "PhysicsShapeBox"
+						parent_bone = ""
+						surface_prop = "default"
+						collision_prop = "default"
+						origin = [ -56.9841, 0.0, 34.0 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						dimensions = [ 33.980278, 58.898109, 43.517925 ]
 					},
 				]
 			},
@@ -102,7 +105,7 @@
 					{
 						_class = "RenderMeshFile"
 						filename = "cars/satsumagt_base.obj"
-						import_translation = [ 0.0, 0.0, 35.0 ]
+						import_translation = [ 0.0, 0.0, 34.0 ]
 						import_rotation = [ 0.0, 180.0, 0.0 ]
 						import_scale = 1.0
 						align_origin_x_type = "None"

@@ -70,28 +70,12 @@
 				children = 
 				[
 					{
-						_class = "PhysicsHullFile"
-						name = "satsumagt_wheel"
+						_class = "PhysicsShapeSphere"
 						parent_bone = ""
 						surface_prop = "default"
 						collision_prop = "default"
-						recenter_on_parent_bone = false
-						offset_origin = [ 0.0, 0.0, 0.0 ]
-						offset_angles = [ -90.0, 0.0, 90.0 ]
-						align_origin_x_type = "None"
-						align_origin_y_type = "None"
-						align_origin_z_type = "None"
-						filename = "cars/satsumagt_wheel.obj"
-						import_scale = 1.0
-						faceMergeAngle = 10.0
-						maxHullVertices = 0
-						import_mode = "SingleHull"
-						optimization_algorithm = "IVR"
-						import_filter = 
-						{
-							exclude_by_default = false
-							exception_list = [  ]
-						}
+						radius = 11.0
+						center = [ 0.0, 0.0, 0.0 ]
 					},
 				]
 			},
