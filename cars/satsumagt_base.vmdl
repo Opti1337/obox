@@ -142,31 +142,12 @@
 				children = 
 				[
 					{
-						_class = "PhysicsShapeBox"
+						_class = "PhysicsHullFromRender"
 						parent_bone = ""
-						surface_prop = "default"
+						surface_prop = "car"
 						collision_prop = "default"
-						origin = [ -5.5761, 0.0, 36.0 ]
-						angles = [ 0.0, 0.0, 0.0 ]
-						dimensions = [ 71.175812, 61.106773, 47.37064 ]
-					},
-					{
-						_class = "PhysicsShapeBox"
-						parent_bone = ""
-						surface_prop = "default"
-						collision_prop = "default"
-						origin = [ 46.702301, 0.0, 28.0 ]
-						angles = [ 0.0, 0.0, 0.0 ]
-						dimensions = [ 45.345322, 58.898109, 30.764614 ]
-					},
-					{
-						_class = "PhysicsShapeBox"
-						parent_bone = ""
-						surface_prop = "default"
-						collision_prop = "default"
-						origin = [ -56.9841, 0.0, 34.0 ]
-						angles = [ 0.0, 0.0, 0.0 ]
-						dimensions = [ 33.980278, 58.898109, 43.517925 ]
+						faceMergeAngle = 20.0
+						maxHullVertices = 32
 					},
 				]
 			},
