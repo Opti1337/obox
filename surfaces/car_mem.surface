@@ -26,8 +26,8 @@
 		}
 		Sounds = 
 		{
-			ImpactSoft = "car_hurt"
-			ImpactHard = "car_hurt"
+			ImpactSoft = "crash_low1"
+			ImpactHard = "crash_low1"
 			RoughScrape = ""
 			FootLeft = "footstep-metal"
 			FootRight = "footstep-metal"
