@@ -45,11 +45,75 @@
 							},
 							{
 								from = "glass.vmat"
-								to = "materials/addon_materials/satsumagt/satsuma_windows.vmat"
+								to = "models/citizen_props/wineglass02.vmat"
 							},
 							{
 								from = "body2.vmat"
 								to = "materials/addon_materials/satsumagt/satsuma_body_masse.vmat"
+							},
+							{
+								from = "datsun_bootlid_mark.vmat"
+								to = "materials/addon_materials/satsumagt/satsuma_bumpers.vmat"
+							},
+							{
+								from = "grille_gt.vmat"
+								to = "materials/addon_materials/satsumagt/satsuma_bumpers.vmat"
+							},
+							{
+								from = "headlight_body.vmat"
+								to = "materials/addon_materials/satsumagt/satsuma_headlight_body.vmat"
+							},
+							{
+								from = "headlight_glass.vmat"
+								to = "materials/addon_materials/satsumagt/satsuma_headlight_glass.vmat"
+							},
+							{
+								from = "bumpers.vmat"
+								to = "materials/addon_materials/satsumagt/satsuma_bumpers.vmat"
+							},
+							{
+								from = "light_rear_glass.vmat"
+								to = "materials/addon_materials/satsumagt/satsuma_rearlight.vmat"
+							},
+							{
+								from = "light_rear_body.vmat"
+								to = "materials/addon_materials/gear.vmat"
+							},
+							{
+								from = "dashboard_body.vmat"
+								to = "materials/addon_materials/satsumagt/satsuma_dashboard.vmat"
+							},
+							{
+								from = "dashboard_panel.vmat"
+								to = "materials/addon_materials/satsumagt/satsuma_dashboard_panel.vmat"
+							},
+							{
+								from = "radio.vmat"
+								to = "materials/addon_materials/satsumagt/satsuma_radio.vmat"
+							},
+							{
+								from = "steering_wheel.vmat"
+								to = "materials/addon_materials/satsumagt/satsumagt_steering_wheel.vmat"
+							},
+							{
+								from = "sub_plate.vmat"
+								to = "materials/addon_materials/gear.vmat"
+							},
+							{
+								from = "floor.vmat"
+								to = "materials/editor/hand_pose_default.vmat"
+							},
+							{
+								from = "sub.vmat"
+								to = "materials/addon_materials/satsumagt/satsuma_sub.vmat"
+							},
+							{
+								from = "seats.vmat"
+								to = "materials/addon_materials/satsumagt/satsuma_seats.vmat"
+							},
+							{
+								from = "interier_panels.vmat"
+								to = "materials/addon_materials/satsumagt/satsuma_interier_panels.vmat"
 							},
 						]
 						use_global_default = false
