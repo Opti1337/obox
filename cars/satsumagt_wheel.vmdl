@@ -70,12 +70,13 @@
 				children = 
 				[
 					{
-						_class = "PhysicsShapeSphere"
+						_class = "PhysicsShapeCylinder"
 						parent_bone = ""
 						surface_prop = "default"
 						collision_prop = "default"
-						radius = 11.0
-						center = [ 0.0, 0.0, 0.0 ]
+						radius = 10.0
+						point0 = [ -2.931968, -0.016447, 0.035456 ]
+						point1 = [ 3.062858, -0.058178, 0.12542 ]
 					},
 				]
 			},
